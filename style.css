@@ -1,0 +1,274 @@
+
+/* STYLE GÉNÉRAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090909;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* EN-TETE */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111111;
+}
+
+/* LOGO */
+header h1 {
+    color: #FF1493;
+    font-size: 30px;
+}
+
+/* MENU */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FF1493;
+}
+
+/* ACCUEIL */
+#accueil {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#accueil h2 {
+    font-size: 45px;
+    color: white;
+}
+
+#accueil p {
+    color: #BBBBBB;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* BOUTON */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF1493, #C00070);
+    color: white;
+    padding: 16px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 5px 25px rgba(255, 20, 147, 0.3);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(255, 20, 147, 0.5);
+}
+
+
+/* GALERIE DES MODELES */
+
+#modeles {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #BBBBBB;
+    margin-bottom: 40px;
+}
+
+.modeles-container {
+    display: flex;/* utiliser flexbox pour la mise en page */
+    justify-content: center; /* centrer les modèles */
+    gap: 30px;  /* espace entre les modèles */
+    flex-wrap: wrap; /*passer a la ligne*/
+}
+
+.modele {
+    background-color: #151015;
+    border: 1px solid #33202D;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    transition: 0.3s;   /* transition pour l'effet de survol */
+}
+
+.modele:hover {
+    transform: translateY(-8px); /* effet de survol pour soulever le modèle */
+    border-color: #FF1493;
+}
+
+/* APERCU DU CV */
+
+.cv-preview {
+    background-color: white;
+    color: #222222;
+    height: 300px;
+    padding: 20px;
+    text-align: left;
+    overflow: hidden; /* cacher le contenu qui dépasse */
+}
+
+.cv-preview h3 {
+    text-align: center;
+    font-size: 17px;
+    color: #222222;
+}
+
+.cv-preview h4 {
+    font-size: 11px;
+    color: #FF1493;
+}
+
+.cv-preview p {
+    font-size: 9px;
+    color: #555555;
+}
+
+.cv-preview hr {
+    border: 1px solid #FF1493;
+}
+
+.modele a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #FF1493;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.modele a:hover {
+    background-color: #C00070;
+}
+
+/* FORMULAIRE */
+
+#formulaire {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#cv-form { /* style du formulaire */
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #151015;
+    border: 1px solid #33202D;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#cv-form h3 {
+    color: #FF1493;
+    margin-top: 25px;
+}
+
+#cv-form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+#cv-form input, /* style des champs de saisie */
+#cv-form textarea { /* textarea permet de saisir plusieurs lignes */
+    width: 100%;
+    padding: 14px;
+    background-color: #090909;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+}
+
+#cv-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#cv-form input:focus,
+#cv-form textarea:focus {
+    outline: none;
+    border-color: #FF1493;
+}
+
+#cv-form button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 15px 35px;
+    background-color: #FF1493;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cv-form button:hover {
+    background-color: #C00070;
+    transform: translateY(-3px);
+}
+
+/* APERCU DU CV */
+
+#apercu {
+    background-color: white;
+    color: #222222;
+    max-width: 750px;
+    min-height: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: left;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4); /* ajouter une ombre pour donner un effet de profondeur */
+}
+
+/* NOM DU CANDIDAT */
+
+#apercu #preview-nom {
+    color: #C00070;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* COORDONNEES */
+
+#apercu #preview-email,
+#apercu #preview-telephone {
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+}
+
+/* TITRES DES RUBRIQUES */
+
+#apercu h3:not(#preview-nom) { /* tous les h3 sauf celui du nom */
+    color: #C00070;
+    border-bottom: 2px solid #FF1493;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* CONTENU */
+
+#apercu p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.7;
+}
+

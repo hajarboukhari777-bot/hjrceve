@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjrceve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur hjrceve</h1>
+        <h1> CV </h1>
+            <nav> <!-- menu de nav -->
+                <a href="#acceuil">Accueil</a>
+               <a href="#modeles">Modèles</a>
+                 <a href="#apropos">À propos</a>
+            </nav>
+    </header>
+
+    <main><!-- contenu principal -->
+        <section id="acceuil">
+            <h2>créer un cv qui vous ressemble</h2>
+            <p>Créez facilement un CV professionnel qui reflète votre style et vos compétences.</p>
+            <a href="modeles" class="btn">Créer mon CV</a>
+        </section>
+
+        <section id="modeles">
+            <h2>Choisissez un modèle</h2>
+            <p class = "description" >Découvrez nos modèles de CV professionnels et sélectionnez celui qui vous ressemble le plus.</p>
+        <div  class="modeles-container">
+
+        <div class="modele">
+            <div class="cv-preview classique">
+                <h3>PRENOM NOM</h3>
+                <hr>
+                <h4>PROFIL</h4>
+                <p>Présentation professionnelle</p>
+                <h4>FORMATION</h4>
+                <p>Diplômes et études</p>
+                <h4>COMPÉTENCES</h4>
+                <p>Vos compétences</p>
+            </div>
+
+            <h3>Classique</h3>
+            <p>Simple et professionnel</p>
+            <a href="#formulaire">Choisir ce modèle</a>
+        </div>
+
+        <div class="modele">
+            <div class="cv-preview moderne">
+                <h3>PRENOM NOM</h3>
+                <hr>
+                <h4>À PROPOS</h4>
+                <p>Votre présentation</p>
+                <h4>EXPÉRIENCE</h4>
+                <p>Votre parcours</p>
+                <h4>FORMATION</h4>
+                <p>Vos diplômes</p>
+            </div>
+
+            <h3>Moderne</h3>
+            <p>Élégant et créatif</p>
+            <a href="#formulaire">Choisir ce modèle</a>
+        </div>
+
+        <div class="modele">
+            <div class="cv-preview elegant">
+                <h3>PRENOM NOM</h3>
+                <hr>
+                <h4>PROFIL</h4>
+                <p>Votre profil professionnel</p>
+                <h4>EXPÉRIENCES</h4>
+                <p>Votre expérience</p>
+                <h4>LANGUES</h4>
+                <p>Vos langues</p>
+            </div>
+
+            <h3>Élégant</h3>
+            <p>Minimaliste et raffiné</p>
+            <a href="#formulaire">Choisir ce modèle</a>
+        </div>
+
+    </div>
+        </section>
+
+        <section id="apropos">
+            <h2>pourquoi Hjrceve</h2>
+            <p>Hjrceve vous permet de créer un CV professionnel en quelques clics, sans nécessiter de compétences techniques.</p>
+        </section>
+        
+<!-- FORMULAIRE DE CREATION DU CV -->
+<section id="formulaire">
+
+    <h2>Créez votre CV</h2>
+
+    <p class="subtitle">
+        Remplissez vos informations pour créer votre CV.
+    </p>
+
+    <form id="cv-form">
+
+        <h3>Informations personnelles</h3>
+
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom"
+               placeholder="Ex : hajar bou***"> <!-- placeholder pour exemple -->
+
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email"
+               placeholder="Ex : hajar@gmail.com">
+
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone"
+               placeholder="Ex : 07 15 26 ** ** ">
+
+        <label for="profil">Présentation professionnelle</label>
+        <textarea id="profil"
+                  placeholder="Présentez-vous en quelques lignes..."></textarea>
+
+        <h3>Formation</h3>
+
+        <label for="formation">Diplôme et établissement</label>
+        <textarea id="formation"
+                  placeholder="Ex : Licence en informatique..."></textarea>
+
+        <h3>Expérience professionnelle</h3>
+
+        <label for="experience">Vos expériences</label>
+        <textarea id="experience"
+                  placeholder="Décrivez vos expériences..."></textarea>
+
+        <h3>Compétences</h3>
+
+        <label for="competences">Vos compétences</label>
+        <textarea id="competences"
+                  placeholder="Ex : HTML, CSS, JavaScript..."></textarea>
+
+        <button type="submit">Générer mon CV</button>
+
+    </form>
+
+<div id="apercu">
+
+    <h2>Aperçu de votre CV</h2>
+
+    <h3 id="preview-nom">Votre nom</h3>
+
+    <p id="preview-email">Votre e-mail</p>
+
+    <p id="preview-telephone">Votre téléphone</p>
+
+    <h3>Profil</h3>
+    <p id="preview-profil">Votre présentation</p>
+
+    <h3>Formation</h3>
+    <p id="preview-formation">Votre formation</p>
+
+    <h3>Expérience</h3>
+    <p id="preview-experience">Votre expérience</p>
+
+    <h3>Compétences</h3>
+    <p id="preview-competences">Vos compétences</p>
+
+</div>
+
+ </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
