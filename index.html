@@ -21,72 +21,78 @@
         <section id="acceuil">
             <h2>créer un cv qui vous ressemble</h2>
             <p>Créez facilement un CV professionnel qui reflète votre style et vos compétences.</p>
-            <a href="modeles" class="btn">Créer mon CV</a>
+            <a href="#modeles" class="btn">Créer mon CV</a>
         </section>
 
-        <section id="modeles">
-            <h2>Choisissez un modèle</h2>
-            <p class = "description" >Découvrez nos modèles de CV professionnels et sélectionnez celui qui vous ressemble le plus.</p>
-        <div  class="modeles-container">
+        
+<section id="modeles">
+    <h2>Choisissez votre modèle de CV</h2>
 
+    <div class="modeles-container">
+
+        <!-- Modèle Classique -->
         <div class="modele">
-            <div class="cv-preview classique">
-                <h3>PRENOM NOM</h3>
-                <hr>
-                <h4>PROFIL</h4>
-                <p>Présentation professionnelle</p>
-                <h4>FORMATION</h4>
-                <p>Diplômes et études</p>
-                <h4>COMPÉTENCES</h4>
-                <p>Vos compétences</p>
-            </div>
-
             <h3>Classique</h3>
-            <p>Simple et professionnel</p>
-            <a href="#formulaire">Choisir ce modèle</a>
-        </div>
 
-        <div class="modele">
-            <div class="cv-preview moderne">
-                <h3>PRENOM NOM</h3>
+            <div class="cv-preview classique">
+                <h3>Votre Nom</h3>
                 <hr>
-                <h4>À PROPOS</h4>
-                <p>Votre présentation</p>
-                <h4>EXPÉRIENCE</h4>
-                <p>Votre parcours</p>
-                <h4>FORMATION</h4>
-                <p>Vos diplômes</p>
+                <h4>Profil</h4>
+                <p>Une présentation professionnelle.</p>
+                <h4>Formation</h4>
+                <p>Votre parcours scolaire.</p>
+                <h4>Expérience</h4>
+                <p>Votre expérience professionnelle.</p>
             </div>
 
+            <a href="#formulaire" data-modele="classique">
+                Choisir ce modèle
+            </a>
+        </div>
+
+        <!-- Modèle Moderne -->
+        <div class="modele">
             <h3>Moderne</h3>
-            <p>Élégant et créatif</p>
-            <a href="#formulaire">Choisir ce modèle</a>
-        </div>
 
-        <div class="modele">
-            <div class="cv-preview elegant">
-                <h3>PRENOM NOM</h3>
+            <div class="cv-preview moderne">
+                <h3>Votre Nom</h3>
                 <hr>
-                <h4>PROFIL</h4>
-                <p>Votre profil professionnel</p>
-                <h4>EXPÉRIENCES</h4>
-                <p>Votre expérience</p>
-                <h4>LANGUES</h4>
-                <p>Vos langues</p>
+                <h4>À propos</h4>
+                <p>Votre présentation.</p>
+                <h4>Mes études</h4>
+                <p>Votre formation.</p>
+                <h4>Compétences</h4>
+                <p>Vos compétences.</p>
             </div>
 
+            <a href="#formulaire" data-modele="moderne">
+                Choisir ce modèle
+            </a>
+        </div>
+
+        <!-- Modèle Élégant -->
+        <div class="modele">
             <h3>Élégant</h3>
-            <p>Minimaliste et raffiné</p>
-            <a href="#formulaire">Choisir ce modèle</a>
+
+            <div class="cv-preview elegant">
+                <h3>Votre Nom</h3>
+                <hr>
+                <h4>Présentation</h4>
+                <p>Votre profil professionnel.</p>
+                <h4>Parcours</h4>
+                <p>Vos expériences et études.</p>
+                <h4>Langues</h4>
+                <p>Les langues maîtrisées.</p>
+            </div>
+
+            <a href="#formulaire" data-modele="elegant">
+                Choisir ce modèle
+            </a>
         </div>
 
     </div>
-        </section>
+</section>
 
-        <section id="apropos">
-            <h2>pourquoi Hjrceve</h2>
-            <p>Hjrceve vous permet de créer un CV professionnel en quelques clics, sans nécessiter de compétences techniques.</p>
-        </section>
         
 <!-- FORMULAIRE DE CREATION DU CV -->
 <section id="formulaire">
@@ -135,6 +141,24 @@
         <textarea id="competences"
                   placeholder="Ex : HTML, CSS, JavaScript..."></textarea>
 
+<h3>Langues</h3>
+
+<label for="langues">Les langues maîtrisées</label>
+<textarea id="langues"
+          placeholder="Ex : Français, Anglais, Arabe..."></textarea>
+
+<h3>Centres d'intérêt</h3>
+
+<label for="interets">Vos centres d'intérêt</label>
+<textarea id="interets"
+          placeholder="Ex : Lecture, sport, voyages..."></textarea>
+
+<h3>Certifications</h3>
+
+<label for="certifications">Vos certifications</label>
+<textarea id="certifications"
+          placeholder="Ex : Certification HTML, TOEIC..."></textarea>
+
         <button type="submit">Générer mon CV</button>
 
     </form>
@@ -160,6 +184,16 @@
 
     <h3>Compétences</h3>
     <p id="preview-competences">Vos compétences</p>
+
+<h3>Langues</h3>
+<p id="preview-langues">Vos langues</p>
+
+<h3>Centres d'intérêt</h3>
+<p id="preview-interets">Vos centres d'intérêt</p>
+
+<h3>Certifications</h3>
+<p id="preview-certifications">Vos certifications</p>
+
 
 </div>
 

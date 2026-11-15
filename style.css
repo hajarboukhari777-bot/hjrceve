@@ -272,3 +272,277 @@ nav a:hover {
     line-height: 1.7;
 }
 
+
+
+/* =================================
+   DESIGN DES TROIS MODELES NOIRE
+================================= */
+
+/* BASE COMMUNE */
+#apercu {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    line-height: 1.7;
+}
+
+#apercu #preview-nom {
+    padding: 25px 15px;
+    margin: 0 0 15px;
+    letter-spacing: 2px;
+}
+
+#apercu h3:not(#preview-nom) {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+}
+
+#apercu p {
+    margin-top: 12px;
+    line-height: 1.9;
+}
+
+
+/* =================================
+   1. MODELE MODERNE
+================================= */
+
+#apercu.classique {
+    font-family: Arial, sans-serif;
+}
+
+#apercu.moderne {
+    background-color: #F4D6B0;
+    color: #0B132B;
+    border-top: 12px solid #D97706;
+    border-radius: 4px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#apercu.moderne #preview-nom {
+    background-color: #0B132B;
+    color: #F4D6B0;
+    font-size: 34px;
+    text-align: left;
+    border-left: 7px solid #5BC0DE;
+    padding: 30px 25px;
+}
+
+#apercu.moderne #preview-email,
+#apercu.moderne #preview-telephone {
+    color: #3A506B;
+    text-align: left;
+    font-weight: bold;
+}
+
+#apercu.moderne h3:not(#preview-nom) {
+    color: #1C2541;
+    border-bottom: 2px solid #D97706;
+}
+
+#apercu.moderne p {
+    color: #1C2541;
+}
+
+#apercu.moderne h2 {
+    color: #3A506B;
+}
+
+
+/* =================================
+   2. MODELE CLASSIQUE
+================================= */
+
+#apercu.classique {
+    background-color: #E9E9EE;
+    color: #6A2B6B;
+    border-top: 10px solid #6A2B6B;
+    border-radius: 8px;
+}
+
+#apercu.classique #preview-nom {
+    background-color: #6A2B6B;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 30px 15px;
+    border-bottom: 5px solid #D854A8;
+}
+
+#apercu.classique #preview-email,
+#apercu.classique #preview-telephone {
+    color: #6C8CD6;
+    font-weight: bold;
+}
+
+#apercu.classique h3:not(#preview-nom) {
+    color: #6A2B6B;
+    border-bottom: 2px solid #D854A8;
+    font-family: Georgia, serif;
+}
+
+#apercu.classique p {
+    color: #333344;
+}
+
+#apercu.classique h2 {
+    color: #6A2B6B;
+    font-family: Georgia, serif;
+}
+
+
+/* =================================
+   3. MODELE ELEGANT
+================================= */
+
+#apercu.elegant {
+    background-color: #F1F5F9;
+    color: #121212;
+    border-top: 10px solid #121212;
+    border-radius: 3px;
+    font-family: Georgia, serif;
+}
+
+#apercu.elegant #preview-nom {
+    background-color: #121212;
+    color: #F1F5F9;
+    font-size: 34px;
+    letter-spacing: 4px;
+    padding: 35px 20px;
+    border-bottom: 4px solid #EC4899;
+}
+
+#apercu.elegant #preview-email,
+#apercu.elegant #preview-telephone {
+    color: #64748B;
+    font-family: Arial, sans-serif;
+}
+
+#apercu.elegant h3:not(#preview-nom) {
+    color: #1F2937;
+    border-bottom: 1px solid #EC4899;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+}
+
+#apercu.elegant p {
+    color: #334155;
+    font-family: Arial, sans-serif;
+}
+
+#apercu.elegant h2 {
+    color: #121212;
+}
+
+/* =================================
+   APERCUS DES MODELES DANS LA GALERIE
+================================= */
+
+/* CLASSIQUE */
+.cv-preview.classique {
+    background-color: #E9E9EE;
+    color: #6A2B6B;
+    border-top: 7px solid #6A2B6B;
+    font-family: Georgia, serif;
+}
+
+.cv-preview.classique h3:first-child {
+    background-color: #6A2B6B;
+    color: white;
+    padding: 15px 5px;
+    border-bottom: 4px solid #D854A8;
+}
+
+.cv-preview.classique h4 {
+    color: #6A2B6B;
+    border-bottom: 1px solid #D854A8;
+    padding-bottom: 5px;
+}
+
+.cv-preview.classique p {
+    color: #44445A;
+}
+
+.cv-preview.classique hr {
+    border-color: #6C8CD6;
+}
+
+
+/* MODERNE */
+.cv-preview.moderne {
+    background-color: #F4D6B0;
+    color: #0B132B;
+    border-top: 7px solid #D97706;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.cv-preview.moderne h3:first-child {
+    background-color: #0B132B;
+    color: #F4D6B0;
+    text-align: left;
+    padding: 15px;
+    border-left: 5px solid #5BC0DE;
+}
+
+.cv-preview.moderne h4 {
+    color: #1C2541;
+    border-bottom: 2px solid #D97706;
+    padding-bottom: 5px;
+}
+
+.cv-preview.moderne p {
+    color: #3A506B;
+}
+
+.cv-preview.moderne hr {
+    border-color: #5BC0DE;
+}
+
+
+/* ELEGANT */
+.cv-preview.elegant {
+    background-color: #F1F5F9;
+    color: #121212;
+    border-top: 7px solid #121212;
+    font-family: Georgia, serif;
+}
+
+.cv-preview.elegant h3:first-child {
+    background-color: #121212;
+    color: #F1F5F9;
+    padding: 18px 5px;
+    border-bottom: 4px solid #EC4899;
+    letter-spacing: 2px;
+}
+
+.cv-preview.elegant h4 {
+    color: #1F2937;
+    border-bottom: 1px solid #EC4899;
+    padding-bottom: 5px;
+}
+
+.cv-preview.elegant p {
+    color: #334155;
+}
+
+.cv-preview.elegant hr {
+    border-color: #64748B;
+}
+
+/* MODELE SELECTIONNE */
+
+.modele.selectionne {
+    border: 2px solid #FF1493;
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.35);
+}
+
+.modele.selectionne a {
+    background-color: #C00070;
+    box-shadow: 0 0 12px rgba(255, 20, 147, 0.4);
+}
+
+
