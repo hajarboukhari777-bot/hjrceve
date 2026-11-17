@@ -1,0 +1,548 @@
+
+/* STYLE GÉNÉRAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090909;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* EN-TETE */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111111;
+}
+
+/* LOGO */
+header h1 {
+    color: #FF1493;
+    font-size: 30px;
+}
+
+/* MENU */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FF1493;
+}
+
+/* ACCUEIL */
+#accueil {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#accueil h2 {
+    font-size: 45px;
+    color: white;
+}
+
+#accueil p {
+    color: #BBBBBB;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* BOUTON */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF1493, #C00070);
+    color: white;
+    padding: 16px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 5px 25px rgba(255, 20, 147, 0.3);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(255, 20, 147, 0.5);
+}
+
+
+/* GALERIE DES MODELES */
+
+#modeles {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #BBBBBB;
+    margin-bottom: 40px;
+}
+
+.modeles-container {
+    display: flex;/* utiliser flexbox pour la mise en page */
+    justify-content: center; /* centrer les modèles */
+    gap: 30px;  /* espace entre les modèles */
+    flex-wrap: wrap; /*passer a la ligne*/
+}
+
+.modele {
+    background-color: #151015;
+    border: 1px solid #33202D;
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    transition: 0.3s;   /* transition pour l'effet de survol */
+}
+
+.modele:hover {
+    transform: translateY(-8px); /* effet de survol pour soulever le modèle */
+    border-color: #FF1493;
+}
+
+/* APERCU DU CV */
+
+.cv-preview {
+    background-color: white;
+    color: #222222;
+    height: 300px;
+    padding: 20px;
+    text-align: left;
+    overflow: hidden; /* cacher le contenu qui dépasse */
+}
+
+.cv-preview h3 {
+    text-align: center;
+    font-size: 17px;
+    color: #222222;
+}
+
+.cv-preview h4 {
+    font-size: 11px;
+    color: #FF1493;
+}
+
+.cv-preview p {
+    font-size: 9px;
+    color: #555555;
+}
+
+.cv-preview hr {
+    border: 1px solid #FF1493;
+}
+
+.modele a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #FF1493;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.modele a:hover {
+    background-color: #C00070;
+}
+
+/* FORMULAIRE */
+
+#formulaire {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#cv-form { /* style du formulaire */
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #151015;
+    border: 1px solid #33202D;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#cv-form h3 {
+    color: #FF1493;
+    margin-top: 25px;
+}
+
+#cv-form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+#cv-form input, /* style des champs de saisie */
+#cv-form textarea { /* textarea permet de saisir plusieurs lignes */
+    width: 100%;
+    padding: 14px;
+    background-color: #090909;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+}
+
+#cv-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#cv-form input:focus,
+#cv-form textarea:focus {
+    outline: none;
+    border-color: #FF1493;
+}
+
+#cv-form button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 15px 35px;
+    background-color: #FF1493;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cv-form button:hover {
+    background-color: #C00070;
+    transform: translateY(-3px);
+}
+
+/* APERCU DU CV */
+
+#apercu {
+    background-color: white;
+    color: #222222;
+    max-width: 750px;
+    min-height: 900px;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: left;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4); /* ajouter une ombre pour donner un effet de profondeur */
+}
+
+/* NOM DU CANDIDAT */
+
+#apercu #preview-nom {
+    color: #C00070;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* COORDONNEES */
+
+#apercu #preview-email,
+#apercu #preview-telephone {
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+}
+
+/* TITRES DES RUBRIQUES */
+
+#apercu h3:not(#preview-nom) { /* tous les h3 sauf celui du nom */
+    color: #C00070;
+    border-bottom: 2px solid #FF1493;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+/* CONTENU */
+
+#apercu p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+/* =================================
+   DESIGN DES TROIS MODELES NOIRE
+================================= */
+
+/* BASE COMMUNE */
+#apercu {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    line-height: 1.7;
+}
+
+#apercu #preview-nom {
+    padding: 25px 15px;
+    margin: 0 0 15px;
+    letter-spacing: 2px;
+}
+
+#apercu h3:not(#preview-nom) {
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+}
+
+#apercu p {
+    margin-top: 12px;
+    line-height: 1.9;
+}
+
+
+/* =================================
+   1. MODELE MODERNE
+================================= */
+
+#apercu.classique {
+    font-family: Arial, sans-serif;
+}
+
+#apercu.moderne {
+    background-color: #F4D6B0;
+    color: #0B132B;
+    border-top: 12px solid #D97706;
+    border-radius: 4px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#apercu.moderne #preview-nom {
+    background-color: #0B132B;
+    color: #F4D6B0;
+    font-size: 34px;
+    text-align: left;
+    border-left: 7px solid #5BC0DE;
+    padding: 30px 25px;
+}
+
+#apercu.moderne #preview-email,
+#apercu.moderne #preview-telephone {
+    color: #3A506B;
+    text-align: left;
+    font-weight: bold;
+}
+
+#apercu.moderne h3:not(#preview-nom) {
+    color: #1C2541;
+    border-bottom: 2px solid #D97706;
+}
+
+#apercu.moderne p {
+    color: #1C2541;
+}
+
+#apercu.moderne h2 {
+    color: #3A506B;
+}
+
+
+/* =================================
+   2. MODELE CLASSIQUE
+================================= */
+
+#apercu.classique {
+    background-color: #E9E9EE;
+    color: #6A2B6B;
+    border-top: 10px solid #6A2B6B;
+    border-radius: 8px;
+}
+
+#apercu.classique #preview-nom {
+    background-color: #6A2B6B;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 30px 15px;
+    border-bottom: 5px solid #D854A8;
+}
+
+#apercu.classique #preview-email,
+#apercu.classique #preview-telephone {
+    color: #6C8CD6;
+    font-weight: bold;
+}
+
+#apercu.classique h3:not(#preview-nom) {
+    color: #6A2B6B;
+    border-bottom: 2px solid #D854A8;
+    font-family: Georgia, serif;
+}
+
+#apercu.classique p {
+    color: #333344;
+}
+
+#apercu.classique h2 {
+    color: #6A2B6B;
+    font-family: Georgia, serif;
+}
+
+
+/* =================================
+   3. MODELE ELEGANT
+================================= */
+
+#apercu.elegant {
+    background-color: #F1F5F9;
+    color: #121212;
+    border-top: 10px solid #121212;
+    border-radius: 3px;
+    font-family: Georgia, serif;
+}
+
+#apercu.elegant #preview-nom {
+    background-color: #121212;
+    color: #F1F5F9;
+    font-size: 34px;
+    letter-spacing: 4px;
+    padding: 35px 20px;
+    border-bottom: 4px solid #EC4899;
+}
+
+#apercu.elegant #preview-email,
+#apercu.elegant #preview-telephone {
+    color: #64748B;
+    font-family: Arial, sans-serif;
+}
+
+#apercu.elegant h3:not(#preview-nom) {
+    color: #1F2937;
+    border-bottom: 1px solid #EC4899;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+}
+
+#apercu.elegant p {
+    color: #334155;
+    font-family: Arial, sans-serif;
+}
+
+#apercu.elegant h2 {
+    color: #121212;
+}
+
+/* =================================
+   APERCUS DES MODELES DANS LA GALERIE
+================================= */
+
+/* CLASSIQUE */
+.cv-preview.classique {
+    background-color: #E9E9EE;
+    color: #6A2B6B;
+    border-top: 7px solid #6A2B6B;
+    font-family: Georgia, serif;
+}
+
+.cv-preview.classique h3:first-child {
+    background-color: #6A2B6B;
+    color: white;
+    padding: 15px 5px;
+    border-bottom: 4px solid #D854A8;
+}
+
+.cv-preview.classique h4 {
+    color: #6A2B6B;
+    border-bottom: 1px solid #D854A8;
+    padding-bottom: 5px;
+}
+
+.cv-preview.classique p {
+    color: #44445A;
+}
+
+.cv-preview.classique hr {
+    border-color: #6C8CD6;
+}
+
+
+/* MODERNE */
+.cv-preview.moderne {
+    background-color: #F4D6B0;
+    color: #0B132B;
+    border-top: 7px solid #D97706;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.cv-preview.moderne h3:first-child {
+    background-color: #0B132B;
+    color: #F4D6B0;
+    text-align: left;
+    padding: 15px;
+    border-left: 5px solid #5BC0DE;
+}
+
+.cv-preview.moderne h4 {
+    color: #1C2541;
+    border-bottom: 2px solid #D97706;
+    padding-bottom: 5px;
+}
+
+.cv-preview.moderne p {
+    color: #3A506B;
+}
+
+.cv-preview.moderne hr {
+    border-color: #5BC0DE;
+}
+
+
+/* ELEGANT */
+.cv-preview.elegant {
+    background-color: #F1F5F9;
+    color: #121212;
+    border-top: 7px solid #121212;
+    font-family: Georgia, serif;
+}
+
+.cv-preview.elegant h3:first-child {
+    background-color: #121212;
+    color: #F1F5F9;
+    padding: 18px 5px;
+    border-bottom: 4px solid #EC4899;
+    letter-spacing: 2px;
+}
+
+.cv-preview.elegant h4 {
+    color: #1F2937;
+    border-bottom: 1px solid #EC4899;
+    padding-bottom: 5px;
+}
+
+.cv-preview.elegant p {
+    color: #334155;
+}
+
+.cv-preview.elegant hr {
+    border-color: #64748B;
+}
+
+/* MODELE SELECTIONNE */
+
+.modele.selectionne {
+    border: 2px solid #FF1493;
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255, 20, 147, 0.35);
+}
+
+.modele.selectionne a {
+    background-color: #C00070;
+    box-shadow: 0 0 12px rgba(255, 20, 147, 0.4);
+}
+
+

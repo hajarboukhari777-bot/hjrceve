@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjrceve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur hjrceve</h1>
+        <h1> CV </h1>
+            <nav> <!-- menu de nav -->
+                <a href="#acceuil">Accueil</a>
+               <a href="#modeles">Modèles</a>
+                 <a href="#apropos">À propos</a>
+            </nav>
+    </header>
+
+    <main><!-- contenu principal -->
+        <section id="acceuil">
+            <h2>créer un cv qui vous ressemble</h2>
+            <p>Créez facilement un CV professionnel qui reflète votre style et vos compétences.</p>
+            <a href="#modeles" class="btn">Créer mon CV</a>
+        </section>
+
+        
+<section id="modeles">
+    <h2>Choisissez votre modèle de CV</h2>
+
+    <div class="modeles-container">
+
+        <!-- Modèle Classique -->
+        <div class="modele">
+            <h3>Classique</h3>
+
+            <div class="cv-preview classique">
+                <h3>Votre Nom</h3>
+                <hr>
+                <h4>Profil</h4>
+                <p>Une présentation professionnelle.</p>
+                <h4>Formation</h4>
+                <p>Votre parcours scolaire.</p>
+                <h4>Expérience</h4>
+                <p>Votre expérience professionnelle.</p>
+            </div>
+
+            <a href="#formulaire" data-modele="classique">
+                Choisir ce modèle
+            </a>
+        </div>
+
+        <!-- Modèle Moderne -->
+        <div class="modele">
+            <h3>Moderne</h3>
+
+            <div class="cv-preview moderne">
+                <h3>Votre Nom</h3>
+                <hr>
+                <h4>À propos</h4>
+                <p>Votre présentation.</p>
+                <h4>Mes études</h4>
+                <p>Votre formation.</p>
+                <h4>Compétences</h4>
+                <p>Vos compétences.</p>
+            </div>
+
+            <a href="#formulaire" data-modele="moderne">
+                Choisir ce modèle
+            </a>
+        </div>
+
+        <!-- Modèle Élégant -->
+        <div class="modele">
+            <h3>Élégant</h3>
+
+            <div class="cv-preview elegant">
+                <h3>Votre Nom</h3>
+                <hr>
+                <h4>Présentation</h4>
+                <p>Votre profil professionnel.</p>
+                <h4>Parcours</h4>
+                <p>Vos expériences et études.</p>
+                <h4>Langues</h4>
+                <p>Les langues maîtrisées.</p>
+            </div>
+
+            <a href="#formulaire" data-modele="elegant">
+                Choisir ce modèle
+            </a>
+        </div>
+
+    </div>
+</section>
+
+        
+<!-- FORMULAIRE DE CREATION DU CV -->
+<section id="formulaire">
+
+    <h2>Créez votre CV</h2>
+
+    <p class="subtitle">
+        Remplissez vos informations pour créer votre CV.
+    </p>
+
+    <form id="cv-form">
+
+        <h3>Informations personnelles</h3>
+
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom"
+               placeholder="Ex : hajar bou***"> <!-- placeholder pour exemple -->
+
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email"
+               placeholder="Ex : hajar@gmail.com">
+
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone"
+               placeholder="Ex : 07 15 26 ** ** ">
+
+        <label for="profil">Présentation professionnelle</label>
+        <textarea id="profil"
+                  placeholder="Présentez-vous en quelques lignes..."></textarea>
+
+        <h3>Formation</h3>
+
+        <label for="formation">Diplôme et établissement</label>
+        <textarea id="formation"
+                  placeholder="Ex : Licence en informatique..."></textarea>
+
+        <h3>Expérience professionnelle</h3>
+
+        <label for="experience">Vos expériences</label>
+        <textarea id="experience"
+                  placeholder="Décrivez vos expériences..."></textarea>
+
+        <h3>Compétences</h3>
+
+        <label for="competences">Vos compétences</label>
+        <textarea id="competences"
+                  placeholder="Ex : HTML, CSS, JavaScript..."></textarea>
+
+<h3>Langues</h3>
+
+<label for="langues">Les langues maîtrisées</label>
+<textarea id="langues"
+          placeholder="Ex : Français, Anglais, Arabe..."></textarea>
+
+<h3>Centres d'intérêt</h3>
+
+<label for="interets">Vos centres d'intérêt</label>
+<textarea id="interets"
+          placeholder="Ex : Lecture, sport, voyages..."></textarea>
+
+<h3>Certifications</h3>
+
+<label for="certifications">Vos certifications</label>
+<textarea id="certifications"
+          placeholder="Ex : Certification HTML, TOEIC..."></textarea>
+
+        <button type="submit">Générer mon CV</button>
+
+    </form>
+
+<div id="apercu">
+
+    <h2>Aperçu de votre CV</h2>
+
+    <h3 id="preview-nom">Votre nom</h3>
+
+    <p id="preview-email">Votre e-mail</p>
+
+    <p id="preview-telephone">Votre téléphone</p>
+
+    <h3>Profil</h3>
+    <p id="preview-profil">Votre présentation</p>
+
+    <h3>Formation</h3>
+    <p id="preview-formation">Votre formation</p>
+
+    <h3>Expérience</h3>
+    <p id="preview-experience">Votre expérience</p>
+
+    <h3>Compétences</h3>
+    <p id="preview-competences">Vos compétences</p>
+
+<h3>Langues</h3>
+<p id="preview-langues">Vos langues</p>
+
+<h3>Centres d'intérêt</h3>
+<p id="preview-interets">Vos centres d'intérêt</p>
+
+<h3>Certifications</h3>
+<p id="preview-certifications">Vos certifications</p>
+
+
+</div>
+
+ </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
